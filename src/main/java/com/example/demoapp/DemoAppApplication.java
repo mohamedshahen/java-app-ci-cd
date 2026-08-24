@@ -15,6 +15,10 @@ public class DemoAppApplication {
 
 @RestController
 class ProfileController {
+
+    // BAD CODE: hard-coded password
+    private String password = "admin123";
+
     @GetMapping("/profile")
     public String profile() {
         return "Welcome to the Demo App!\nName: John Doe\nRole: DevOps Engineer";
