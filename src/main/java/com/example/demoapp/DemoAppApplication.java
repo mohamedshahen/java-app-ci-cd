@@ -18,7 +18,12 @@ class ProfileController {
 
     // BAD CODE: hard-coded password
     private String password = "admin123";
-
+    
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to the Demo App!";
+    }
+    
     @GetMapping("/profile")
     public String profile() {
         return "Welcome to the Demo App!\nName: Mohamed  Shahin\nRole: DevOps Engineer";
