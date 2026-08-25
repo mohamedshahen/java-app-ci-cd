@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: mohamedshahen/java-app:19
+        image: docker.io/mohamedshahen/java-app:19
         ports:
         - containerPort: 8080
 ---
