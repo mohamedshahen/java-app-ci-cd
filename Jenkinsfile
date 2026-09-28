@@ -38,6 +38,11 @@ pipeline {
     }
 }
     stage('Quality Gate') {
+         when {
+        expression {
+            params.RUN_SONAR
+        }
+    }
        
     steps {
         timeout(time: 5, unit: 'MINUTES') {
