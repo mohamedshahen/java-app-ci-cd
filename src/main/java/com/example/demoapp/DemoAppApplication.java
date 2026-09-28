@@ -16,8 +16,7 @@ public class DemoAppApplication {
 @RestController
 class ProfileController {
 
-    // BAD CODE: hard-coded password
-    //private String password = "admin123";
+   
     
     @GetMapping("/")
     public String home() {
